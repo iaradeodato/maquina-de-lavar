@@ -1,0 +1,41 @@
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.select-indicator {
+  font-size: 3.6rem;
+  color: #eb00ff;
+}
+
+.select-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.select-control {
+  width: 0;
+  height: 0;
+  border-color: #eb00ff;
+  border-style: solid;
+  border-left: 3rem solid transparent;
+  border-right: 3rem solid transparent;
+  cursor: pointer;
+}
+
+.select-control--up {
+  border-bottom-width: 1.8rem;
+  border-top: 0;
+}
+
+.select-control--down {
+  border-top-width: 1.8rem;
+  border-bottom: 0;
+}

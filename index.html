@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="power.css" />
+    <link rel="stylesheet" href="select.css" />
+    <link rel="stylesheet" href="knob.css" />
+    <link rel="stylesheet" href="color-picker.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <title>Máquina de Lavar</title>
+</head>
+
+<body>
+    <div id="power" class="rounded-corner translucid">
+        <div id="power-icon">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <svg id="power-icon__svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30.143 30.143"
+                xml:space="preserve">
+                <g>
+                    <path
+                        d="M20.034,2.357v3.824c3.482,1.798,5.869,5.427,5.869,9.619c0,5.98-4.848,10.83-10.828,10.83
+                    c-5.982,0-10.832-4.85-10.832-10.83c0-3.844,2.012-7.215,5.029-9.136V2.689C4.245,4.918,0.731,9.945,0.731,15.801
+                    c0,7.921,6.42,14.342,14.34,14.342c7.924,0,14.342-6.421,14.342-14.342C29.412,9.624,25.501,4.379,20.034,2.357z" />
+                    <path d="M14.795,17.652c1.576,0,1.736-0.931,1.736-2.076V2.08c0-1.148-0.16-2.08-1.736-2.08
+                    c-1.57,0-1.732,0.932-1.732,2.08v13.496C13.062,16.722,13.225,17.652,14.795,17.652z" />
+                </g>
+            </svg>
+        </div>
+        <div id="music-track">
+            <div id="music-track--elapsed"></div>
+            <div id="music-track-marker-1" class="music-track__marker"></div>
+            <div id="music-track-marker-2" class="music-track__marker"></div>
+            <div id="music-track-marker-3" class="music-track__marker"></div>
+            <div id="music-track-marker-4" class="music-track__marker"></div>
+        </div>
+    </div>
+    <div id="sliders">
+        <div class="rounded-corner translucid">
+            <div class="slider-wrapper">
+                <div id="shape-caption" class="diamond"></div>
+                <input type="range" min="1" max="5" value="2" step="1" name="shape" id="slider-shape">
+            </div>
+        </div>
+        <div class="rounded-corner translucid">
+            <div class="slider-wrapper">
+                <div id="stroke-caption">
+                    <div></div>
+                </div>
+                <input type="range" min="1" max="50" value="2" step="1" name="stroke" id="slider-stroke">
+            </div>
+        </div>
+        <div class="rounded-corner translucid">
+            <div class="slider-wrapper">
+                <div id="size-caption"></div>
+                <input type="range" min="20" max="640" value="150" step="50" name="size" id="slider-size">
+            </div>
+        </div>
+        <div class="rounded-corner translucid">
+            <div id="select-repetitions">
+                <div class="select-wrapper">
+                    <div class="select-indicator">00</div>
+                    <div class="select-controls">
+                        <div class="select-control select-control--up"></div>
+                        <div class="select-control select-control--down"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="special-controls">
+        <div class="rounded-corner translucid">
+            <div id="color"></div>
+        </div>
+        <div class="rounded-corner translucid">
+            <div class="knob-wrapper">
+                <div id="test-knob" class="knob-container">
+                    <div class="knob-outer-circle">
+                        <div class="knob-inner-circle">
+                            <div class="knob-indicator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="canvas-wrapper"></div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

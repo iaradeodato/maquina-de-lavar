@@ -1,0 +1,75 @@
+#power {
+  padding: 40px;
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  width: 772px;
+  height: 143px;
+  display: flex;
+  align-items: center;
+}
+
+#power-icon {
+  height: 90px;
+  width: 90px;
+  border-radius: 500px;
+  background: #0e0e0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#power-icon__svg {
+  height: 45px;
+  width: 45px;
+  fill: #eb00ff;
+}
+
+#music-track {
+  margin-left: 25px;
+  width: 550px;
+  height: 2px;
+  background: #f9b9ff;
+  z-index: 10;
+  position: relative;
+  flex-grow: 1;
+}
+
+#music-track--elapsed {
+  height: 8px;
+  background: #eb00ff;
+  position: absolute;
+  left: 0;
+  right: 100%;
+  z-index: 11;
+  transform: translateY(-33.33%);
+  border-radius: 100px;
+}
+
+.music-track__marker {
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  background: #f9b9ff;
+  z-index: 11;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#music-track-marker-1 {
+  left: 22.18%;
+}
+
+#music-track-marker-2 {
+  left: 33.79%;
+}
+
+#music-track-marker-3 {
+  left: 56.31%;
+}
+
+#music-track-marker-4 {
+  left: 67.92%;
+}
